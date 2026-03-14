@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Sheddy Mboya — Learn Web Development</title>
+  <meta name="description" content="Sheddy Mboya - Learn and teach HTML, CSS, JavaScript and Python">
+  <link rel="stylesheet" href="Tec.css">
+ 
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">SM</div>
+        <div>
+          <div >Sheddy Mboya</div>
+          <div >Web developer · Instructor</div>
+        </div>
+      </div>
+      <nav>
+        <button><a href="#courses">Courses</button></a>
+        <button><a href="#about">About</button></a>
+        <button><a href="#contact">Contact Us</button></a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h1>Learn to build modern websites — HTML, CSS, JavaScript &amp; Python</h1>
+        <p class="lead">Interactive lessons, hands-on projects, and 1:1 mentoring with Sheddy. Suitable for beginners and developers upgrading to full‑stack.</p>
+
+        <div class="cta">
+          <button class="btn" type="button" onclick="openEnroll()">Enroll Now</button>
+          <button class="btn btn-outline" ><a href="#courses">View courses</button></a>
+        </div>
+
+        <div id="courses" class="courses" >
+          <div class="course card">
+            <h3>HTML &amp; Accessibility</h3>
+            <p>Semantic HTML, forms, accessibility fundamentals, and real-world page structure.</p>
+          </div>
+          <div class="course card">
+            <h3>CSS &amp; Responsive Design</h3>
+            <p>Layouts (Flexbox, Grid), animations, and responsive best practices.</p>
+          </div>
+          <div class="course card">
+            <h3>JavaScript Essentials</h3>
+            <p>DOM, events, fetch, ES6+, and building interactive UI.</p>
+          </div>
+          <div class="course card">
+            <h3>Python for Web</h3>
+            <p>Python basics, scripts, and an intro to web frameworks (Flask/Django).</p>
+          </div>
+        </div>
+
+        <div class="features">
+          <div class="feature card">
+            <h3>Project-based</h3>
+            <div >Build portfolios and real apps</div>
+          </div>
+          <div class="feature card">
+            <h3>Flexible hours</h3>
+            <div >Online lessons that fit your schedule</div>
+          </div>
+          <div class="feature card">
+            <h3>Mentorship</h3>
+            <div >1:1 code reviews and career advice</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="sidebar">
+        <div class="card">
+          <h3>Get in touch</h3>
+          <p >Quick links to join or ask questions.</p>
+
+          <div class="enroll-cta">
+            <!-- Replace +254700000000 with your WhatsApp number (country code + number, no plus in wa.me link) -->
+            <a class="btn btn-primary" href="https://wa.me/+254790524398" target="_blank" rel="noopener">Message on WhatsApp</a>
+            <a class="btn btn-outline" href="shedyy708@gmail.com">Email: shedyy708@gmail.com</a>
+          </div>
+
+          <div >
+            <div >Follow Sheddy</div>
+            <div class="socials">
+              <a href="https://facebook.com/profile.php?id=61584363231025" target="_blank" rel="noopener">Facebook</a>
+              <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener">Twitter</a>
+              <a href="https://linkedin.com/in/sheddymboya" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://instagram.com/blackflyingtiges" target="_blank" rel="noopener">Instagram</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" >
+          <h4>Why learn with Sheddy?</h4>
+          <ul >
+            <li>Practical curriculum</li>
+            <li>Portfolio-ready projects</li>
+            <li>Supportive community</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="card">
+      <h2 >About Sheddy</h2>
+      <p>Sheddy Mboya is a web developer and instructor offering lessons in HTML, CSS, JavaScript and Python. Lessons include short theory, guided exercises and a capstone project for each track.</p>
+    </section>
+
+    <section id="contact" >
+      <div class="card">
+        <h3>Contact &amp; Schedule</h3>
+        <p>Want a custom schedule or corporate training? Send a WhatsApp message or email.</p>
+
+      
+        <form onsubmit="event.preventDefault(); sendMessage()" >
+        <div class="inputBox">  
+          <input type="text" required >
+          <span>Full Name</span>
+        </div>
+        <div class="inputBox">  
+          <input  id="email" type="email" required >
+          <span>Your Email</span>
+        </div>
+        <div class="inputBox">  
+          <textarea id="message" placeholder="Message" rows="4" required></textarea>
+          <span>Message</span>
+        </div>
+          <div>
+            <button class="btn" type="submit"  onclick="sendMessage()">Send</button>
+            <button class="btn" type="button" onclick="clearForm()">Clear</button>
+          </div>
+          <div id="sendResult" ></div>
+        </form>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="tec.js"></script>
+
+  <footer>
+    <div>© Sheddy Mboya | Learn Web Development</div>
+    <div >Made with ❤️  I am looking forward to walk this journey with you</div>
+  </footer>
+
+</body>
+</html>

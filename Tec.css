@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2? family=Poppins:wgt@300;400;500;600;700;800;900& display=swap');
+
+
+
+
+body{
+    background-image: url("clear.jpg" ) ;
+    color: #ff8;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+
+}
+button{
+    padding: 10px 35px;
+    font-size: 20px;
+    color: #fff;
+    background: #111;
+    border: 2px solid #0ff;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #0ff, 0 0 #0ff;
+    transition: 0.3s ease-in-out;
+    margin: 20px;
+}
+button:hover{
+    box-shadow: 0 o 10px #0ff, 0 0 #0ff;
+    background-color: #0ff;
+    color: #000;
+}
+.inputBox
+{
+    position: center;
+    width: 250px;
+}
+.inputBox input{
+    width: 200px;
+    padding: 20px;
+    border: 1px flex rgba(255,255,255,0.25);
+    margin: 20px;
+    background: #000;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    
+}
+.inputBox span{
+    position: relative;
+    left: 6;
+    padding: 10px;
+    font-size: em;
+    color: rgba(52, 13, 224, 0.25);
+    text-transform: uppercase;
+    transition: 0.3s;
+    margin: 20px;
+}
+.inputBox input:valid ~ span
+{
+    color: #0ff;
+    transform: translateX(9px) translateY(-30px);
+    font-size: 0.65em;
+    padding: 5px;
+    background: #111;
+    border-left: 1px solid #0ff;
+    border-right: 1px solid #0ff;
+    letter-spacing: 0.6em;
+    margin: 10px;
+    border-radius: 2pc;
+}
+
+footer{background:#0b1220;color:white;padding:2rem 1rem;margin-top:2rem
+}
+form{
+    background: rgb(255, 0, 0);
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+h1{
+color: #fff;
+}
+h2{
+    color: #fff;
+}
+h3{
+    color: #fff;
+}
+form label{
+    display: block;
+    font-weight: 600;
+    margin:0.5rem 0 0.25rem;
+    color: #fff;
+}
+strong{
+    color: rgb(0,255,0);
+}
